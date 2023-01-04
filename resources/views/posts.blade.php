@@ -10,24 +10,11 @@
 </head>
 
 <body>
+    <?php foreach ($posts as $post) : ?>
     <article>
-        <h1><a href="/posts/my-first-post">First Post</a></h1>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsam praesentium quam numquam aliquid ut eos, expedita sequi vitae itaque. Adipisci rerum nisi nostrum, id impedit consequatur sunt! Quisquam, adipisci. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum labore error minima omnis doloremque pariatur aliquid mollitia, dolore vero neque perferendis ex! Delectus odio pariatur quae in perferendis excepturi consequatur.
-        </p>
+        <?= $post; ?>
     </article>
-    <article>
-        <h1><a href="/posts/my-second-post">Second Post</a></h1>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsam praesentium quam numquam aliquid ut eos, expedita sequi vitae itaque. Adipisci rerum nisi nostrum, id impedit consequatur sunt! Quisquam, adipisci. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum labore error minima omnis doloremque pariatur aliquid mollitia, dolore vero neque perferendis ex! Delectus odio pariatur quae in perferendis excepturi consequatur.
-        </p>
-    </article>
-    <article>
-        <h1><a href="/posts/my-third-post">Third Post</a></h1>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsam praesentium quam numquam aliquid ut eos, expedita sequi vitae itaque. Adipisci rerum nisi nostrum, id impedit consequatur sunt! Quisquam, adipisci. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum labore error minima omnis doloremque pariatur aliquid mollitia, dolore vero neque perferendis ex! Delectus odio pariatur quae in perferendis excepturi consequatur.
-        </p>
-    </article>
+    <?php endforeach; ?>
 </body>
 
 </html>
