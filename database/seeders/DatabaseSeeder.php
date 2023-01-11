@@ -20,7 +20,7 @@ class DatabaseSeeder extends Seeder
     {
 
         $user1 = User::factory()->create([
-            'name' => 'z0mbiebrad'
+            'name' => 'Bradley Evans'
         ]);
         $cats1 = Category::factory()->create([
             'slug' => 'odio'
@@ -30,7 +30,7 @@ class DatabaseSeeder extends Seeder
             'category_id' => $cats1
         ]);
         $user2 = User::factory()->create([
-            'name' => 'fullstackalien'
+            'name' => 'Jason Languasco'
         ]);
         $cats2 = Category::factory()->create([
             'slug' => 'infernum'
