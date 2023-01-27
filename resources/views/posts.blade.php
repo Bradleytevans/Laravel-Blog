@@ -10,5 +10,5 @@
         <p class="text-center">No posts yet please check back.</p>
         @endif
 
-    </main>`
+    </main>
 </x-layout>
