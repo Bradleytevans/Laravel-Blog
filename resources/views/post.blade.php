@@ -45,9 +45,9 @@
                     {{ ucwords($post->title) }}
                 </h1>
 
-                <div class="space-y-4 leading-loose lg:text-lg">
+                <div class="space-y-4 leading-loose lg:text-lg space-y-4">
                     <p>
-                        {{ $post->body }}
+                        {!! $post->body !!}
                     </p>
                 </div>
             </div>
