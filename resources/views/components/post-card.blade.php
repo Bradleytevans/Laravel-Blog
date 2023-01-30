@@ -12,14 +12,14 @@
                 <div class="space-x-2">
                     <a href="{{ $post->category->slug }}"
                         class="rounded-full border border-blue-300 px-3 py-1 text-xs font-semibold uppercase text-blue-300"
-                        style="font-size: 10px">{{ $post->category->slug }}
+                        style="font-size: 10px">{{ $post->category->name }}
                     </a>
                 </div>
 
                 <div class="mt-4">
                     <h1 class="text-3xl">
                         <a href="/posts/{{ $post->slug }}">
-                            {{ $post->title }}
+                            {{ ucwords($post->title) }}
                         </a>
                     </h1>
 

@@ -1,9 +1,9 @@
-@props(['post']);
+@props(['post'])
 
 <article
     class="rounded-xl border border-black border-opacity-0 transition-colors duration-300 hover:border-opacity-5 hover:bg-gray-100">
     <div class="py-6 px-5 lg:flex">
-        <div class="flex-1 lg:mr-8">.
+        <div class="flex-1 lg:mr-8">
             {{-- TODO --}}
             <img src="/images/illustration-1.png" alt="Blog Post illustration" class="rounded-xl">
         </div>
@@ -19,7 +19,7 @@
                 <div class="mt-4">
                     <h1 class="text-3xl">
                         <a href="/posts/{{ $post->slug }}">
-                            {{ $post->title }}
+                            {{ ucwords($post->title) }}
                         </a>
 
                     </h1>
