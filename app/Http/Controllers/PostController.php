@@ -12,8 +12,9 @@ class PostController extends Controller
     public function index()
     {
         return view('posts', [
-            'posts' => Post::latest()->filter(request(['search']))->get(),
-            'categories' => Category::all()
+            'posts' => Post::latest()->filter(request(['search', 'category']))->get(),
+            'categories' => Category::all(),
+            'currentCategory' => Category::firstWhere('slug', request('category')),
         ]);
     }
 
@@ -21,15 +22,6 @@ class PostController extends Controller
     {
         return view('post', [
             'post' => $post
-        ]);
-    }
-
-    public function categories(Category $category)
-    {
-        return view('posts', [
-            'posts' => $category->posts,
-            'currentCategory' => $category,
-            'categories' => Category::all()
         ]);
     }
 
